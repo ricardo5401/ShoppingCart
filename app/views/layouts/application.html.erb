@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <meta charset="UTF-8">
     <title>Shoppingcart</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://kit.fontawesome.com/0ab2b3a3d2.js"></script>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Rubik:300,400,500,600,700">
   </head>
 
   <body>
+    <%= render "shared/nav" %>
     <%= yield %>
   </body>
 </html>
