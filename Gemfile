@@ -62,3 +62,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'devise'
 gem 'rails_admin'
+gem 'carrierwave'
+gem 'copy_carrierwave_file'
+gem 'fog'
